@@ -13,13 +13,9 @@ body {
   height: 100vh;
 }
 
-.hidden {
-  display: none;
-}
-
 .container {
   text-align: center;
-  width: 100;
+  width: 100%;
   max-width: 1200px;
   margin: 5rem auto;
   display: flex;
