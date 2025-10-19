@@ -1,0 +1,160 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 2.2rem;
+  color: #ff7ec5;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.button-grid button {
+  padding: 2.8rem 8.4rem;
+  font-size: 2.8rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  color: #333;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-grid button:hover {
+  background-color: #ffdcef;
+  transform: scale(1.05);
+}
+
+.subtitle {
+  font-size: 2.2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #ff7ec5;
+}
+
+.custom-row {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+}
+
+.custom-buttons {
+  display: flex;
+  flex: 1 1 0;
+  gap: 2rem;
+}
+
+.custom-btn {
+  flex: 1 1 0;
+  padding: 2.5rem 0;
+  font-size: 2.2rem;
+  border: 2px solid #ccc;
+  background: transparent;
+  color: #333;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: #ffdcef;
+  transform: scale(1.05);
+}
+
+.custom-input {
+  flex: 1 1 0;
+  padding: 2.5rem 0;
+  font-size: 2.5rem;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+  text-align: center;
+  background: transparent;
+  color: #333;
+  /* Remove number input arrows for all browsers */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.custom-input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  -webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.custom-inputs {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.input-group .input-bar {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group .input-bar:focus {
+  border-color: #4c8bf5;
+}
